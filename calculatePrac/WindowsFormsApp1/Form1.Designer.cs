@@ -1,6 +1,6 @@
-﻿namespace practiceDataType
+﻿namespace WindowsFormsApp1
 {
-    partial class Form
+    partial class Form1
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
@@ -28,33 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.jongho_box = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
-            // 
-            // jongho_box
-            // 
-            this.jongho_box.Location = new System.Drawing.Point(12, 12);
-            this.jongho_box.Multiline = true;
-            this.jongho_box.Name = "jongho_box";
-            this.jongho_box.Size = new System.Drawing.Size(776, 426);
-            this.jongho_box.TabIndex = 0;
-            // 
-            // Form
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.jongho_box);
-            this.Name = "Form";
             this.Text = "Form1";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox jongho_box;
     }
 }
 
