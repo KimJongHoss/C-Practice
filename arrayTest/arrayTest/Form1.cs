@@ -43,32 +43,61 @@ namespace arrayTest
 
             //2중 for문
             //[실습] multiDimensionalArray2 를 for 루프 써서 돌아가면서 1~6까지 출력
-            for (int i = 0; i < 2; i++)
+            //for (int i = 0; i < 2; i++)
+            //{
+
+            //    for (int j = 0; j < 3; j++)
+            //    {
+            //        int x = multiDimensionalArray2[i, j];
+            //        textBox2.Text += x.ToString();
+            //        textBox2.Text += "\r\n";
+            //    }
+            //}
+
+            ////2차원은 GetLength(0)은 행의 개수, Getlength(1)은 열의 개수를 알 수 있습니다.
+            ////GetLength(0)은 0차원을 의미한다 GetLength(1)은 1차원을 의미한다
+            //for (int i = 0; i < multiDimensionalArray2.GetLength(0); i++)
+            //{
+
+            //    for (int j = 0; j < multiDimensionalArray2.GetLength(1); j++)
+            //    {
+            //        int x = multiDimensionalArray2[i, j];
+            //        textBox2.Text += x.ToString();
+            //        textBox2.Text += "\r\n";
+            //    }
+            //}
+
+            ////문자열 함수
+            //string codingon = "codingon";
+
+            //string[] a = "1 2 3".Split(' ');
+            //textBox2.Text += a[0] + "\r\n";
+            //textBox2.Text += a[1] + "\r\n";
+            //textBox2.Text += a[2] + "\r\n";
+            //textBox2.Text = codingon.IndexOf('o').ToString();
+
+            ////[실습] "codingon" 을 문자열 함수 이용해서 "codingoff" 로 변환하여 출력
+
+            //textBox2.Text = codingon.Replace("on", "off");
+
+            //[실습2] 문자열 str, 정수 n일 때 str이 n번 반복된 문자열을 만들어 출력하는 코드 작성
+            repeat("string 5");
+
+
+            void repeat(string words)
             {
+                string[] b = words.Split(' ');
+                string str = b[0];
+                int n = int.Parse(b[1]);
 
-                for (int j = 0; j < 3; j++)
+                for (int i = 0; i<n; i++)
                 {
-                    int x = multiDimensionalArray2[i, j];
-                    textBox2.Text += x.ToString();
-                    textBox2.Text += "\r\n";
+                    textBox2.Text+= str;
                 }
+               
             }
-
-            //2차원은 GetLength(0)은 행의 개수, Getlength(1)은 열의 개수를 알 수 있습니다.
-            //GetLength(0)은 0차원을 의미한다 GetLength(1)은 1차원을 의미한다
-            for (int i = 0; i < multiDimensionalArray2.GetLength(0); i++)
-            {
-
-                for (int j = 0; j < multiDimensionalArray2.GetLength(1); j++)
-                {
-                    int x = multiDimensionalArray2[i, j];
-                    textBox2.Text += x.ToString();
-                    textBox2.Text += "\r\n";
-                }
-            }
-
         }
 
-       
+
     }
 }
