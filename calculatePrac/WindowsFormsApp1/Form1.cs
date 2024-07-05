@@ -17,8 +17,6 @@ namespace WindowsFormsApp1
             InitializeComponent();
 
             
-
-
             //계산기 연습
             int calcul (int x, int y)
             {
