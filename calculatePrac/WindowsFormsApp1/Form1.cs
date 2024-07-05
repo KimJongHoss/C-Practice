@@ -15,6 +15,21 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+
+            
+
+
+            //계산기 연습
+            int calcul (int x, int y)
+            {
+                int a = x;
+                int b = y;
+                int result = a + b;
+                return result;
+            }
+
+
+
         }
     }
 }
