@@ -16,18 +16,48 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
 
-            
+
             //계산기 연습
-            int calcul (int x, int y)
+
+            calcul(12, "!", 6 );
+
+            void calcul(Double x, String sign, Double y)
             {
-                int a = x;
-                int b = y;
-                int result = a + b;
-                return result;
+                double result = 0;
+                switch (sign)
+                {
+                    case ("+"):
+                        result = x + y;
+                        textBox1.Text += result.ToString() + "\r\n계산 완료";
+                        break;
+                    case ("-"):
+                        result = x - y;
+                        textBox1.Text += result.ToString() + "\r\n계산 완료";
+                        break;
+                    case ("*"):
+                        result = x * y;
+                        textBox1.Text += result.ToString()+ "\r\n계산 완료";
+                        break;
+                    case ("/"):
+                        if (y == 0)
+                        {
+                            textBox1.Text = "0으로 나눌 수는 없습니다.";
+                            break ;
+                        }
+                        result = x / y;
+                        textBox1.Text += result.ToString() + "\r\n계산 완료";
+                        break;
+                    default:
+                        MessageBox.Show("잘못된 계산식입니다.");
+                        break;
+                }
+               
             }
 
 
 
         }
+
+        
     }
 }
